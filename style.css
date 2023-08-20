@@ -1,0 +1,147 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Edu+SA+Beginner&family=Mochiy+Pop+P+One&family=Poppins:wght@100&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+nav{
+
+}
+nav ul{
+    display: flex;
+    list-style-type:none ;
+    height: 70px;
+    align-items: center;
+    /* justify-content: space-between; */
+    color: rgb(236, 227, 227);
+    background-color:#D6A2E8;
+}
+nav ul a {
+    color: rgb(228, 230, 232);
+}
+nav ul li{
+    padding: 0 12px;
+} 
+.brand img{
+    
+    padding: 0 7px;
+    width: 70px;
+    height: 100%;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.container{
+    min-height: 75vh;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border: 2px dotted #D6A2E8;
+    border-radius: 10px;
+   padding: 20px;
+    
+
+}
+.container img{
+    height: 100%
+    
+}
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color:;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+
+}
+.icons{
+    /* background-color: antiquewhite; */
+    margin: 10px;
+    cursor: pointer;
+}
+.songitem-container{
+    margin-top: 50px;
+}
+.songlist{
+    width: 100%;
+
+}
+.songitem{
+    height: 50px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-items: auto;
+    justify-content: space-between;
+    gap: 70px;
+
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 34px;
+}
+
+
+.time i{
+    cursor: pointer;
+}
+.songinfo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 8vw;
+    margin: 20px 0;
+    padding-top: 20px;
+
+}
+.songinfo img{
+    height: 40px;
+    width: 100px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    
+}
+#myprogressbar{
+    width: 80vw;
+    /* background-color: antiquewhite; */
+    cursor: pointer;
+}
+/* Mobile View Styles */
+@media (max-width: 450px) {
+    .songitem {
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .songitem img {
+        max-height: 40px;
+    }
+
+    .songinfo {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+    }
+}
+
