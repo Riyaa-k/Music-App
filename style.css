@@ -44,7 +44,7 @@ nav ul li{
     font-size: 1.5rem;
 }
 .container{
-    min-height: 75vh;
+    
     display: flex;
     margin: 23px auto;
     width: 70%;
@@ -84,6 +84,7 @@ nav ul li{
 }
 .songitem{
     height: 50px;
+    
     
     display: flex;
     flex-direction: row;
@@ -127,6 +128,9 @@ nav ul li{
 }
 /* Mobile View Styles */
 @media (max-width: 450px) {
+    .container{
+
+    }
     .songitem {
         gap: 10px;
         padding: 5px;
