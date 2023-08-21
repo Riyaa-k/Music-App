@@ -126,26 +126,41 @@ nav ul li{
     /* background-color: antiquewhite; */
     cursor: pointer;
 }
-/* Mobile View Styles */
-@media (max-width: 450px) {
-    .container{
-
+/* Media query for screens below 400px */
+@media (max-width: 400px) {
+    body {
+      font-size: 12px; /* Adjust the font size for better readability on smaller screens */
     }
+  
+    .brand {
+      font-size: 20px; /* Adjust the brand font size */
+    }
+  
+    nav ul li {
+      padding: 0 8px; /* Adjust the padding around navigation items */
+    }
+  
+    .container {
+      width: 90%; /* Adjust the width of the container for better spacing */
+      margin: 15px auto; /* Adjust the margin for center alignment */
+    }
+  
     .songitem {
-        gap: 10px;
-        padding: 5px;
+      width: 100%; /* Set song items to full width */
+      margin-bottom: 10px;
+      padding: 10px; /* Added padding to song items */
     }
-
-    .songitem img {
-        max-height: 40px;
+  
+    .songname {
+      font-size: 12px; /* Adjust the font size of song names */
     }
-
-    .songinfo {
-        position: relative;
-        left: 0;
-        top: 0;
-        margin: 0;
-        padding: 0;
+  
+    .songlistplay {
+      font-size: 10px; /* Adjust the font size of the play icon and time */
     }
-}
-
+  
+    #myprogressbar {
+      width: 90%; /* Adjust the width of the progress bar */
+    }
+  }
+  
